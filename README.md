@@ -90,3 +90,15 @@ This framework can be adapted for:
 ---
 
 ## 🗂️ Repository Structure
+
+starlight-meal-optimizer/
+│
+├── data/
+│   └── meals.csv               # Sample meal attributes & costs
+│
+├── starlight_optimizer.py      # Main optimization script
+├── starlight_optimizer.ipynb   # Notebook version with explanations
+│
+└── README.md                   # Project documentation
+
+
