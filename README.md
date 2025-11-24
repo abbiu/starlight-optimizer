@@ -1,127 +1,92 @@
 # starlight-optimizer
 
-🌟 Starlight Meal Optimizer
+# 🌟 Starlight Meal Optimizer  
+*A linear optimization model for planning weekly school meals under cost, nutrition, and operational constraints.*
 
-A linear optimization model for planning weekly school meals under cost, nutrition, and operational constraints.
+---
 
-⸻
+## 📌 Overview
 
-📌 Overview
+The **Starlight Meal Optimizer** is a linear programming model that determines the most cost-efficient weekly meal plan for a school while satisfying all nutritional and operational rules.
 
-The Starlight Meal Optimizer is a linear programming model that determines the most cost-efficient weekly meal plan for a school while meeting all nutrition requirements and operational rules.
-
-The project replicates real-world planning challenges — balancing budgets, constraints, and trade-offs — and mirrors the type of decision problems seen in retail planning, assortment optimization, and supply chain management.
+It mirrors real planning challenges found in operations, inventory allocation, and retail assortment optimization—requiring trade-offs between budgets, capacity, variety, and requirements.
 
 This repository includes:
-	•	Python implementation of the optimization model
-	•	Input data structure (meals, costs, nutrition attributes)
-	•	Scenario analysis framework
-	•	Outputs demonstrating feasible meal plans under different constraints
 
-⸻
+- Python implementation of the optimization model  
+- Input data structure (meal costs & nutrition attributes)  
+- Scenario analysis options  
+- Output meal plans and cost breakdowns  
 
-🎯 Business Problem
+---
 
-A school needs to design a weekly menu that:
-	•	Meets nutrition guidelines
-	•	Stays within a budget
-	•	Ensures variety across the week
-	•	Respects kitchen production limits
-	•	Minimizes total cost
+## 🎯 Business Problem
 
-Manual planning is slow, subjective, and hard to scale.
-The goal: automate the planning process using optimization.
+A school must design a weekly menu that:
 
-⸻
+- Meets **nutrition guidelines**
+- Stays within a **budget**
+- Ensures **menu variety**
+- Adheres to **kitchen capacity limits**
+- Minimizes **total cost**
 
-🧠 Approach
-	1.	Define decision variables
-	•	How many servings of each meal to include across the week.
-	2.	Build constraints
-	•	Budget constraints
-	•	Minimum calorie/protein/fat requirements
-	•	Maximum daily servings
-	•	Variety/minimum number of distinct meals
-	•	Kitchen capacity limits
-	3.	Objective function
-	•	Minimize total cost while satisfying all constraints.
-	4.	Solve with a linear optimizer
-	•	Gurobi or OR-Tools
-	•	Return meal plan + cost breakdown
-	5.	Scenario analysis
-	•	What happens if budget increases/decreases?
-	•	What if nutrition requirements tighten?
-	•	What if a certain meal is removed or constrained?
+Manual planning is slow, inconsistent, and difficult to scale.  
+The goal: **automate the decision process** using linear optimization.
 
-⸻
+---
 
-📊 Results
+## 🧠 Approach
+
+1. **Decision Variables**  
+   - Number of servings of each meal per day.
+
+2. **Constraints**  
+   - Budget limits  
+   - Calorie, protein, fat requirements  
+   - Daily maximum servings  
+   - Variety requirements  
+   - Production capacity  
+
+3. **Objective Function**  
+   - Minimize total weekly cost.
+
+4. **Solver**  
+   - Implemented using **Gurobi** or **OR-Tools**.
+
+5. **Scenario Analysis**  
+   - Budget changes  
+   - Nutrition requirement changes  
+   - Menu substitutions  
+
+---
+
+## 📊 Results
 
 The optimizer produces weekly meal plans that:
-	•	Meet 100% of nutritional requirements
-	•	Stay below the weekly budget constraint
-	•	Maintain sufficient menu variety
-	•	Respect all operational limits
-	•	Provide insight into cost trade-offs
 
-This structure can be adapted for:
-	•	Retail assortment optimization
-	•	Inventory planning under constraints
-	•	Workforce scheduling
-	•	Supply allocation problems
+- Meet all required nutrition rules  
+- Stay within budget  
+- Include adequate variety  
+- Respect kitchen operational limits  
+- Minimize total cost  
 
-⸻
+This framework can be adapted for:
 
-🛠️ Tech Stack
-	•	Python
-	•	Gurobi or OR-Tools (linear optimization)
-	•	Pandas
-	•	NumPy
-	•	Matplotlib (optional for visuals)
+- Retail assortment optimization  
+- Inventory planning  
+- Workforce scheduling  
+- Supply allocation problems  
 
-⸻
+---
 
-🗂️ Repository Structure
-starlight-meal-optimizer/
-│
-├── data/
-│   └── meals.csv               # meal attributes & costs (sample data)
-│
-├── starlight_optimizer.py      # main optimization script
-├── starlight_optimizer.ipynb   # notebook version with explanations
-│
-└── README.md                   # this file
+## 🛠️ Tech Stack
 
-⸻
+- **Python 3**
+- **Gurobi** or **OR-Tools** (linear optimization)
+- **Pandas**
+- **NumPy**
+- **Matplotlib** (optional)
 
-🚀 How to Run the Model
-1. Clone the repo
-git clone https://github.com/YOUR-USERNAME/starlight-meal-optimizer.git
-cd starlight-meal-optimizer
-2. Install dependencies
-pip install pandas numpy Gurobi
-3. Run
-python starlight_optimizer.py
-4. View Results
+---
 
-Outputs include:
-	•	Optimal weekly meal plan
-	•	Total cost
-	•	Constraint satisfaction report
-	•	Scenario comparisons (if enabled)
-
-⸻
-
-🌱 Why This Project Matters
-
-This model demonstrates:
-	•	Constraint-based thinking
-	•	Trade-off evaluation
-	•	Analytical structuring of ambiguous problems
-	•	Real-world use of optimization in planning
-
-It represents the exact mindset required in:
-	•	Retail planning & allocation
-	•	Supply chain operations
-	•	Inventory optimization
-	•	Forecasting & scenario modeling
+## 🗂️ Repository Structure
